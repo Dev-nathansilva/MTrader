@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTRADER</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <!-- Unicons -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+   <!-- boxicons -->
+   <link
+   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+   rel="stylesheet"
+ />
+
+</head>
+
+<body>
+ 
+
+  <div class="geral">
+
+    <aside id="aside">
+      <div class="top">
+        <div class="logo">
+          <img src="./assets/images/Logo-01.png" alt="logo" />
+          <h2 class="size">M<span class="roxo">TRADER</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+      <div class="sidebar">
+        <a href="#" class="active">
+          <i class="bx bxs-dashboard"></i>
+          <h3>Painel</h3>
+        </a>
+        <a href="#">
+          <i class="bx bx-user"></i>
+          <h3>Meu Perfil</h3>
+        </a>
+        <a href="#">
+          <i class="bx bx-receipt"></i>
+          <h3>Ações</h3>
+        </a>
+        <a href="#">
+          <i class="bx bx-trending-up"></i>
+          <h3>Gráficos</h3>
+        </a>
+        <a href="#">
+          <i class="bx bx-envelope"></i>
+          <h3>Mensagens</h3>
+          <span class="message-count"> 26 </span>
+        </a>
+        <a href="#">
+          <i class="bx bxs-report"></i>
+          <h3>Lucros</h3>
+        </a>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <h3>Configurações</h3>
+        </a>
+        <a href="#">
+          <i class="bx bx-exit"></i>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+    <article>
+
+
+      <h2 class="dashbord"><i class="uil uil-presentation-line" style="color: blueviolet;"></i> PAINEL DE AÇÕES </h2>
+
+      <!-- 
+        - #TREND
+      -->
+
+      <section class="section trend" id="acoes" aria-label="crypto trend" data-section>
+        <div class="container">
+
+          <div class="trend-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Vale</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Petrobras</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Magalu</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Tesla</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Ambev</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Localiza</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Bradesco</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Itaú</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Suzano</button>
+              </li>
+
+            </ul>
+
+            <ul class="tab-content">
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/BRADESCO.png" width="24" height="24" alt="bitcoin logo">
+
+                    <a href="#" class="card-title">
+                      Bradesco <span class="span">BRL</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">R$ 5.040,23</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge red">-0.79%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card active">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/PETROBRAS.png" width="24" height="24" alt="Petrobras logo">
+
+                    <a href="#" class="card-title">
+                      Petrobras <span class="span">BRL</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="3480.04">R$ 3.480,04</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge green">+10.55%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/VALE.png" width="24" height="24" alt="Vale logo">
+
+                    <a href="#" class="card-title">
+                      Vale <span class="span">BRL</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="1.00">R$ 443,56</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge red">-0.01%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/magalu-logo-1 1.png" width="24" height="24" alt="Tesla logo">
+
+                    <a href="#" class="card-title">
+                      Magazine Luiza <span class="span">BRL</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="443.56">R$ 901,22</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge red">-1.24%</div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MARKET
+      -->
+
+      <section class="section market" id="market" aria-label="market update" data-section>
+        <div class="container">
+          
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Atualizações de mercado</h2>
+
+            <a href="#" class="btn-link">Ver todas ações</a>
+          </div>
+
+          <div class="market-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Top 10 Ações</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Criptomoedas</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Mais lucro</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">NFT</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Probabilidades Altas</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Startup</button>
+              </li>
+            </ul>
+
+            <table class="market-table">
+
+              <thead class="table-head">
+
+                <tr class="table-row table-title">
+
+                  <th class="table-heading"></th>
+
+                  <th class="table-heading" scope="col">#</th>
+
+                  <th class="table-heading" scope="col">Nome</th>
+
+                  <th class="table-heading" scope="col">Último preço</th>
+
+                  <th class="table-heading" scope="col">24h %</th>
+
+                  <th class="table-heading" scope="col">Valor de mercado</th>
+
+                  <th class="table-heading" scope="col">Últimos 7 dias</th>
+
+                  <th class="table-heading"></th>
+
+                </tr>
+
+              </thead>
+
+              <tbody class="table-body">
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">1</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/icones/petrobras.svg" width="20" height="20" alt="Petrobras logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Petrobras <span class="span">BRL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">R$663,54</td>
+
+                  <td class="table-data last-update green">+1.45%</td>
+
+                  <td class="table-data market-cap">R$809.432,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">2</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/icones/bradesco-logo.svg" width="20" height="20" alt="Bradesco logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Bradesco <span class="span">BRL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">R$547,90</td>
+
+                  <td class="table-data last-update red">-5.12%</td>
+
+                  <td class="table-data market-cap">R$880.423,640</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">3</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/icones/vale.svg" width="20" height="20" alt="Vale logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Vale <span class="span">BRL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">R$547,90</td>
+
+                  <td class="table-data last-update green">+1.45%</td>
+
+                  <td class="table-data market-cap">R$880.640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">4</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/icones/Itau.svg" width="20" height="20" alt="Itau logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Itaú <span class="span">BRL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">R$547,90</td>
+
+                  <td class="table-data last-update red">-3.75%%</td>
+
+                  <td class="table-data market-cap">R$880.640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">5</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/icones/ambev.svg" width="20" height="20" alt="Ambev logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Ambev <span class="span">BRL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">R$547,90</td>
+
+                  <td class="table-data last-update green">+1.45%</td>
+
+                  <td class="table-data market-cap">R$880.640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </article>
+    </main>
+
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="profile">
+          <div class="info">
+            <p>Olá, <b>Nathan Silva</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="./assets/images/profile-1.jpg" alt="profile" />
+          </div>
+        </div>
+      </div>
+      <div class="recent-updates">
+        <h2>Notificações</h2>
+        <div class="updates">
+          <div class="update">
+            <div class="profile-photo">
+              <img src="./assets/images/profile-2.jpg " alt="" />
+            </div>
+            <div class="message">
+              <p>
+                <b>Gabriel silva</b> Realizou a compra de uma ação da Petrobras.
+              </p>
+              <small class="text-muted"> 2 minutos atrás </small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="./assets/images/profile-3.jpg" alt="" />
+            </div>
+            <div class="message">
+              <p>
+                <b>Lívia pontes</b> Vendeu uma ação do Itaú Unibanco.
+              </p>
+              <small class="text-muted"> 2 minutos atrás </small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="./assets/images/profile-4.jpg" alt="" />
+            </div>
+            <div class="message">
+              <p>
+                <b>Dr. evenly</b> Faturou mais de 1 milhão com as ações da Tesla
+              </p>
+              <small class="text-muted"> 2 minutos atrás </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sales-analytics">
+        <h2>Histórico de Transações</h2>
+
+        <div class="item online">
+          <div class="icon">
+            <img style="width: 35px;" src="./assets/images/BRADESCO.png" alt="">
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>Bradesco</h3> 
+              <h2>BBR4</h2>
+              <small class="text-muted">24 horas atrás </small>
+            </div>
+            <span class="badge green">+0.9%</span>
+          </div>
+        </div>
+        <div class="item online">
+          <div class="icon">
+            <img style="width: 35px;" src="./assets/images/PETROBRAS.png" alt="">
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>Petrobras</h3> 
+              <h2>PTR3</h2>
+              <small class="text-muted">24 horas atrás </small>
+            </div>
+            <span class="badge red">-1,3%</span>
+          </div>
+        </div>
+        <div class="item online">
+          <div class="icon">
+            <img style="width: 35px;" src="./assets/images/TESLA.png" alt="">
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>TESLA</h3> 
+              <h2>RENT2</h2>
+              <small class="text-muted">24 horas atrás </small>
+            </div>
+            <span class="badge green">+4.0%</span>
+          </div>
+        </div>
+
+      
+        <div class="item add-product">
+          <div>
+            <i class="bx bx-plus"></i>
+            <h3>Comprar Ações</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- 
+    - js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

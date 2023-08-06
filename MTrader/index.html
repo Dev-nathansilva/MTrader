@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTRADER</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <!-- Unicons -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Logo-01.png" width="80" height="80" alt="MTrader logo">
+        <img src="./assets/images/Logo-02.png" width="120" height="120">
+        
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#acoes" class="navbar-link" data-nav-link>Comprar Ações</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#market" class="navbar-link" data-nav-link>Atualizações</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#sobre" class="navbar-link" data-nav-link>Sobre Nós</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#app" class="navbar-link" data-nav-link>App</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <a href="#" class="btn btn-outline" id="form-open">Fazer Login</a>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+
+        <div class="form-group">
+          <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+          <!-- Login From -->
+          <div class="form login_form">
+            <form action="#">
+              <h2>Login</h2>
+  
+              <div class="input_box">
+                <input type="text" placeholder="nome de usuário" required />
+                <i class="uil uil-user user"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="senha" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Lembrar de mim</label>
+                </span>
+                <a href="#" class="forgot_pw">Esqueceu sua senha?</a>
+              </div>
+  
+              <!-- <button class="button">Fazer Login</button> -->
+              <a href="../Painel/index.html" class="button">Fazer Login</a>
+  
+              <div class="login_signup">Não Possui uma conta? <a href="#" id="signup">Cadastre-se</a></div>
+            </form>
+          </div>
+  
+          <!-- Signup From -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Cadastre-se</h2>
+  
+              <div class="input_box">
+                <input type="text" placeholder="Nome de Usuário" required />
+                <i class="uil uil-user user"></i>
+              </div>
+              <div class="input_box">
+                <input type="email" placeholder="Digite seu email" required />
+                <i class="uil uil-envelope user"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="crie uma senha" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <button class="button">Cadastrar</button>
+  
+              <div class="login_signup">Já possui uma conta? <a href="#" id="login">Login</a></div>
+            </form>
+          </div>
+          </div>
+
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Compre & Venda Ações Digitais na MTrader</h1>
+
+            <p class="hero-text">
+              MTrader é a maneira mais fácil, segura e rápida de comprar e vender troca de ativos e ações da bolsa de valores..
+            </p>
+
+            <a href="#" class="btn btn-primary">Comece Agora</a>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/foto-03.png" width="570" height="448" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </div>  
+      </section>
+
+
+      <!-- 
+        - #TREND
+      -->
+
+      <section class="section trend" id="acoes" aria-label="crypto trend" data-section>
+        <div class="container">
+
+          <div class="trend-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Vale</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Petrobras</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Magalu</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Tesla</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Ambev</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Localiza</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Bradesco</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Itaú</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Suzano</button>
+              </li>
+
+            </ul>
+
+            <ul class="tab-content">
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/BRADESCO.png" width="24" height="24" alt="bitcoin logo">
+
+                    <a href="#" class="card-title">
+                      Bradesco <span class="span">BRL/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">USD 46,168.95</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge red">-0.79%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card active">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/PETROBRAS.png" width="24" height="24" alt="Petrobras logo">
+
+                    <a href="#" class="card-title">
+                      Petrobras <span class="span">ETH/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="3480.04">USD 3,480.04</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge green">+10.55%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/VALE.png" width="24" height="24" alt="Vale logo">
+
+                    <a href="#" class="card-title">
+                      Vale <span class="span">BRL/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="1.00">USD 1.00</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge red">-0.01%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/magalu-logo-1 1.png" width="24" height="24" alt="Tesla logo">
+
+                    <a href="#" class="card-title">
+                      Magazine Luiza <span class="span">BRL/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="443.56">USD 443.56</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">36,641.20</data>
+
+                    <div class="badge red">-1.24%</div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MARKET
+      -->
+
+      <section class="section market" id="market" aria-label="market update" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Atualizações de mercado</h2>
+
+            <a href="#" class="btn-link">Ver todas ações</a>
+          </div>
+
+          <div class="market-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Top 10 Ações</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Criptomoedas</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Mais lucro</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">NFT</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Probabilidades Altas</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Startup</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Experientes</button>
+              </li>
+
+            </ul>
+
+            <table class="market-table">
+
+              <thead class="table-head">
+
+                <tr class="table-row table-title">
+
+                  <th class="table-heading"></th>
+
+                  <th class="table-heading" scope="col">#</th>
+
+                  <th class="table-heading" scope="col">Nome</th>
+
+                  <th class="table-heading" scope="col">Último preço</th>
+
+                  <th class="table-heading" scope="col">24h %</th>
+
+                  <th class="table-heading" scope="col">Valor de mercado</th>
+
+                  <th class="table-heading" scope="col">Últimos 7 dias</th>
+
+                  <th class="table-heading"></th>
+
+                </tr>
+
+              </thead>
+
+              <tbody class="table-body">
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">1</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-1.svg" width="20" height="20" alt="Bitcoin logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Bitcoin <span class="span">BTC</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$56,623.54</td>
+
+                  <td class="table-data last-update green">+1.45%</td>
+
+                  <td class="table-data market-cap">$880,423,640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">2</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-2.svg" width="20" height="20" alt="Ethereum logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Ethereum <span class="span">ETH</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$56,623.54</td>
+
+                  <td class="table-data last-update red">-5.12%</td>
+
+                  <td class="table-data market-cap">$880,423,640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">3</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-3.svg" width="20" height="20" alt="Tether logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Tether <span class="span">USDT/USD</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$56,623.54</td>
+
+                  <td class="table-data last-update green">+1.45%</td>
+
+                  <td class="table-data market-cap">$880,423,640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">4</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-4.svg" width="20" height="20" alt="BNB logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">BNB <span class="span">BNB/USD</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$56,623.54</td>
+
+                  <td class="table-data last-update red">-3.75%%</td>
+
+                  <td class="table-data market-cap">$880,423,640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">5</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-5.svg" width="20" height="20" alt="Solana logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Solana <span class="span">SOL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$56,623.54</td>
+
+                  <td class="table-data last-update green">+1.45%</td>
+
+                  <td class="table-data market-cap">$880,423,640,582</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Trade</button>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="sobre" aria-label="about" data-section>
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/People.png" width="30" height="26" loading="lazy" alt="about banner"
+              class="w-70">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Sobre a MTrader</h2>
+
+            <p class="section-text">
+              Bem-vindo à MTrader, sua parceira confiável no mundo complexo e empolgante do mercado financeiro. Como uma empresa líder no setor, estamos comprometidos em fornecer soluções de investimento inovadoras e orientadas por dados que capacitam nossos clientes a alcançar seus objetivos financeiros com confiança
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Veja os preços das Ações em tempo real
+                  </h3>
+                </div>
+
+                <p class="item-text">
+                  Na MTrader, abraçamos a era digital com entusiasmo. Nossas estratégias de investimento são impulsionadas por análises avançadas
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Nossa História de Excelência Financeira</h3>
+                </div>
+
+                <p class="item-text">
+                  Na MTrader, abraçamos a era digital com entusiasmo. Nossas estratégias de investimento são impulsionadas por análises avançadas.
+                </p>
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">Explore Mais</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #APP
+      -->
+
+      <section class="section app" id="app" aria-label="app" data-section>
+        <div class="container">
+
+          <div class="app-content">
+
+            <h2 class="h2 section-title">Libere seu dinheiro & invista com confiança
+              </h2>
+
+            <p class="section-text">
+              Com a MTrader, você pode ter certeza de que suas habilidades de negociação são compatíveis
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 item-title">Compre, venda e negocie em qualquer lugar</h3>
+                </div>
+
+                <p class="item-text">
+                  Gerencie suas participações a partir do seu dispositivo móvel
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 item-title">Assuma o controle de sua riqueza</h3>
+                </div>
+
+                <p class="item-text">
+                  Tenha certeza de que você (e somente você) tem acesso aos seus fundos
+                </p>
+              </li>
+
+            </ul>
+
+            <div class="app-wrapper">
+              <a href="#">
+                <img src="./assets/images/googleplay.png" width="135" height="40" loading="lazy"
+                  alt="get it on google play">  
+              </a>
+
+              <a href="#">
+                <img src="./assets/images/appstore.png" width="120" height="40" loading="lazy"
+                  alt="download on the app store">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="app-banner">
+            <img src="./assets/images/foto-APP.png" width="800" height="526" loading="lazy" alt="app banner"
+              class="w-100">
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" data-section>
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo-01.png" width="70" height="70" alt="MTrader logo">
+            <img src="./assets/images/Logo-02.png" width="130" height="130" alt="MTrader logo">
+  
+          </a>
+
+          <h2 class="footer-title">Vamos conversar! 🤙</h2>
+
+          <a href="tel:+123456789101" class="footer-contact-link">(85) 99023-3245</a>
+
+          <a href="mailto:mtrader.contato@gmail.com" class="footer-contact-link">mtrader.contato@gmail.com</a>
+
+          <address class="footer-contact-link">
+            Rua Barão de Aracati, 644 - Meireles - Fortaleza-CE - BR
+          </address>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Produtos</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Spot</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Inverse Perpetual</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">USDT Perpetual</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Intercâmbio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Plataforma</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Binance Pay</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Comprar Ações</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mercados</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Taxa de negociação</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Programa de Afiliados</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Programa de referência</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Suporte</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Centro de ajuda</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Feedback do usuário</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Envie uma solicitação</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Documentação da API</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Regras de Negociação</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre Nós</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Sobre Nós</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre Bybit</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Verificação de Autenticidade</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Carreiras</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contatos Comerciais</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 MTrader Todos os direitos reservados por
+          <a href="#" class="copyright-link">NathanSilva</a>
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
